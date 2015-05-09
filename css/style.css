@@ -11,7 +11,7 @@ Primary style
 
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   width:100%;
   height:100%;
 }
@@ -20,7 +20,7 @@ body {
   width:100%;
   height:100%;
   font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -66,11 +66,12 @@ header h1 {
   /* button style */
   background: #000;
   color: #ffffff;
-  padding: 2em 2em;
+  padding: 4.35em 2em;
   border-radius: 10em;
+  position: fixed;
 }
 .no-touch .cd-bouncy-nav-trigger:hover {
-  background: #555555;
+  background: #333;
 }
 
 .cd-bouncy-nav-modal {
@@ -95,17 +96,7 @@ header h1 {
   transition: opacity 0.1s 0s, visibility 0s 0s;
 }
 .cd-bouncy-nav-modal .cd-close {
-  display: block;
-  position: fixed;
-  top: 20px;
-  right: 5%;
-  width: 44px;
-  height: 44px;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: url("../img/cd-icon-close.svg") no-repeat center center;
+  
   -webkit-transform: scale(0) translateZ(0);
   -moz-transform: scale(0) translateZ(0);
   -ms-transform: scale(0) translateZ(0);
@@ -134,7 +125,7 @@ header h1 {
 .cd-bouncy-nav {
   position: absolute;
   left: 50%;
-  top: 50vh;
+  top: 52vh;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -212,7 +203,8 @@ header h1 {
   position: relative;
   padding: 90px 20px 0;
   margin-bottom: 30px;
-  color: #ffffff;    
+  color: #ffffff;
+  font-family: 'raleway'; 
 }
 .cd-bouncy-nav a::before {
   /* icons */
@@ -236,7 +228,7 @@ header h1 {
   background-position: 0 0;
 }
 .no-touch .cd-bouncy-nav a:hover::before {
-  background-color: #555;
+  background-color: #333;
 }
 .cd-bouncy-nav li:nth-of-type(2) a::before {
   background-position: -80px 0;
@@ -376,7 +368,7 @@ particles.js
 }
 
 .panel {
-    font-family: 'Lato';
+    font-family: 'Raleway', sans-serif;
     position: fixed;
     z-index: 1;
     background: transparent;
