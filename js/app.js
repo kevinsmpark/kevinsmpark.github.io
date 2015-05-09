@@ -1,24 +1,31 @@
+/* default dom id (particles-js) */
+//particlesJS();
+
+/* config dom id */
+//particlesJS('dom-id');
+
+/* config dom id (optional) + config particles params */
 particlesJS('particles-js', {
   particles: {
-    color: '#000',
+    color: '#fff',
     color_random: false,
     shape: 'circle', // "circle", "edge" or "triangle"
     opacity: {
       opacity: 1,
       anim: {
-        enable: false,
+        enable: true,
         speed: 1.5,
         opacity_min: 0,
         sync: false
       }
     },
-    size: 2.5,
+    size: 4,
     size_random: true,
-    nb: 100,
+    nb: 150,
     line_linked: {
       enable_auto: true,
-      distance: 140,
-      color: '#000',
+      distance: 100,
+      color: '#fff',
       opacity: 1,
       width: 1,
       condensed_mode: {
@@ -35,10 +42,10 @@ particlesJS('particles-js', {
   interactivity: {
     enable: true,
     mouse: {
-      distance: 250
+      distance: 300
     },
     detect_on: 'canvas', // "canvas" or "window"
-    mode: 'grab', // "grab" of false
+    mode: 'grab', // "grab" or false
     line_linked: {
       opacity: .5
     },
