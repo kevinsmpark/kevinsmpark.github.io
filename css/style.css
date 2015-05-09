@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: #555555;
+  color: #333;
   text-decoration: none;
 }
 
@@ -37,33 +37,12 @@ a {
 Main Components 
 
 -------------------------------- */
-header {
-  position: relative;
-  height: 100px;
-  line-height: 100px;
-}
-header h1 {
-  font-size: 2.4rem;
-  text-align: center;
-}
-@media only screen and (min-width: 1170px) {
-  header {
-    height: 300px;
-    line-height: 300px;
-  }
-  header h1 {
-    font-size: 3.2rem;
-    font-weight: 300;
-  }
-}
-
 .cd-section {
   padding: 5em;
   text-align: center;
 }
 
 .cd-bouncy-nav-trigger {
-  /* button style */
   background: #000;
   color: #ffffff;
   padding: 4.35em 2em;
@@ -150,7 +129,6 @@ header h1 {
   text-align: center;
 }
 .is-visible .cd-bouncy-nav li {
-  /* used to assign a tranlsateY value when the animation is over */
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -207,7 +185,6 @@ header h1 {
   font-family: 'raleway'; 
 }
 .cd-bouncy-nav a::before {
-  /* icons */
   content: '';
   display: block;
   position: absolute;
@@ -355,6 +332,7 @@ header h1 {
     transform: translateY(-100vh);
   }
 }
+
 /* -------------------------------- 
 
 particles.js 
