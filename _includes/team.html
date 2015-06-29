@@ -1,0 +1,22 @@
+<!-- Team -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Team</h2>
+                    <h3 class="section-subheading text-muted">Meet the people behind the pogo.</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.people %}
+                <div class="col-xs-3 col-sm-4 text-center">
+                    <div class="team-member">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p class="position text-muted">{{ member.position }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
